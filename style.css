@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(241, 241, 241);
+    font-family: sans-serif;
+}
+#tile{
+    width: 500px; 
+    margin: 10% auto;
+    padding: 10px;
+}
+#game{
+    width: 313px;
+    height: 373px;
+    background-image: url('imgs/snow.png');
+    background-size: contain;
+    margin: 0 auto;
+    border: 1px solid rgb(212, 212, 212);
+    background-color: rgb(245, 245, 245);
+}
+.piece{
+    width: 50px;
+    height: 50px;
+    float: left;
+    
+}
+.player{
+    background-image: url('imgs/penguin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.obstacle{
+    background-image: url('imgs/ghost.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.goal{
+    background-image: url('imgs/reward.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
