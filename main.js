@@ -39,7 +39,6 @@ let movementCounter = 0;
 let i;
 let j;
 document.onkeyup = (e) => {
-
     if (e.keyCode == '38') {
         //up
         if (movementCounter == 0) {
@@ -53,9 +52,9 @@ document.onkeyup = (e) => {
             pieces[i][j + 1].classList.remove('player');
         }
         if (pieces[i][j].classList.contains('obstacle')) {
-            alert('u lost')
+            alert('u lost');
         } else if (pieces[i][j].classList.contains('goal')) {
-            alert('u win')
+            alert('u win');
         }
 
         movementCounter++;
@@ -96,7 +95,7 @@ document.onkeyup = (e) => {
             i += 1;
             pieces[i][j].classList.add('player');
             pieces[i - 1][j].classList.remove('player');
-            
+
             if (pieces[i][j].classList.contains('obstacle')) {
                 alert('u lost')
             } else if (pieces[i][j].classList.contains('goal')) {
